@@ -1,0 +1,66 @@
+:root {
+  --background: hsl(40, 30%, 96%);
+  --foreground: hsl(30, 10%, 15%);
+  --primary: hsl(30, 10%, 18%);
+  --secondary: hsl(38, 35%, 88%);
+  --accent: hsl(38, 70%, 50%);
+  --muted: hsl(40, 20%, 90%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.card {
+  background: var(--secondary);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shadow-gold {
+  box-shadow: 0 10px 30px hsla(38, 70%, 50%, 0.35);
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+}
