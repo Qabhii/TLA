@@ -51,7 +51,7 @@
 // );
 // }
 
-
+//client/src/component/header.jsx 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -150,6 +150,7 @@ export default function Header() {
           {navItem("/", "Home")}
           {navItem("/about", "About")}
           {navItem("/services", "Services")}
+          {navItem("/toolkit", "Toolkit")}
         </nav>
 
         {/* Right CTA */}

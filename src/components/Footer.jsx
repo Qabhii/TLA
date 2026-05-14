@@ -70,7 +70,7 @@ export default function Footer() {
                 href="mailto:info@trustleapadvisors.com"
                 style={{ color: "#cfc9be", textDecoration: "none" }}
               >
-                info@trustleapadvisors.com
+                contact@trustleafadvisors.in
               </a>
             </div>
           </div>

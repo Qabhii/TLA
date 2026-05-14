@@ -126,19 +126,19 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    image: "/hero/slide1.jpg",
+    image: "/services/slide1.png",
     title: "Trusted Financial Advisors",
     subtitle:
       "Providing accounting, taxation, and advisory services with clarity and confidence.",
   },
   {
-    image: "/hero/slide2.jpg",
+    image: "/services/slide2.png",
     title: "Comprehensive Financial Solutions",
     subtitle:
       "From audits to compliance, we help businesses stay strong and compliant.",
   },
   {
-    image: "/hero/slide3.jpg",
+    image: "/services/slide3.png",
     title: "Guiding Businesses Forward",
     subtitle:
       "Strategic financial guidance tailored for long-term growth and stability.",

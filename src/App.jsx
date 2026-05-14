@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import Toolkit from "./pages/Toolkit";
 
 
 export default function App() {
@@ -11,6 +12,7 @@ return (
 <Route path="/" element={<Home />} />
 <Route path="/about" element={<About />} />
 <Route path="/services" element={<Services />} />
+<Route path="/toolkit" element={<Toolkit />} />
 </Routes>
 </BrowserRouter>
 );
