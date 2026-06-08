@@ -51,7 +51,303 @@
 // );
 // }
 
-//client/src/component/header.jsx 
+// //client/src/component/header.jsx 
+// import { useState, useEffect } from "react";
+// import { Link, useLocation } from "react-router-dom";
+
+// export default function Header() {
+//   const [scrolled, setScrolled] = useState(false);
+//   const location = useLocation();
+
+//   useEffect(() => {
+//     const onScroll = () => setScrolled(window.scrollY > 10);
+//     window.addEventListener("scroll", onScroll);
+//     return () => window.removeEventListener("scroll", onScroll);
+//   }, []);
+
+//   const navItem = (to, label) => (
+//     <Link
+//       to={to}
+//       style={{
+//         position: "relative",
+//         padding: "6px 2px",
+//         color: location.pathname === to ? "var(--accent)" : "inherit",
+//         fontWeight: 500,
+//       }}
+//     >
+//       {label}
+//       {location.pathname === to && (
+//         <span
+//           style={{
+//             position: "absolute",
+//             left: 0,
+//             bottom: -6,
+//             width: "100%",
+//             height: 2,
+//             background: "var(--accent)",
+//             borderRadius: 2,
+//           }}
+//         />
+//       )}
+//     </Link>
+//   );
+
+//   return (
+//     <header
+//       style={{
+//         position: "fixed",
+//         top: 0,
+//         width: "100%",
+//         zIndex: 50,
+//         background: scrolled ? "rgba(255,250,243,0.9)" : "transparent",
+//         backdropFilter: scrolled ? "blur(12px)" : "none",
+//         borderBottom: scrolled ? "1px solid rgba(0,0,0,0.06)" : "none",
+//       }}
+//     >
+//       <div
+//         className="container"
+//         style={{
+//           height: 80,
+//           display: "flex",
+//           alignItems: "center",
+//           justifyContent: "space-between",
+//         }}
+//       >
+//         {/* Left: Logo + Brand */}
+//         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+//           <div
+//             style={{
+//               width: 44,
+//               height: 44,
+//               borderRadius: "50%",
+//               overflow: "hidden",
+//               background: "#FFFFFF",
+//               display: "flex",
+//               alignItems: "center",
+//               justifyContent: "center",
+//             }}
+//           >
+//                        <img
+//               src="/logo.jpeg"
+//               alt="CA Logo"
+//               style={{ width: "90%", height: "90%", objectFit: "cover" }}
+//             />
+//           </div>
+
+//           <div style={{ lineHeight: 1.2 }}>
+//             <div style={{ fontWeight: 800, fontSize: 22 }}>
+//               <p>TrustLeaf Advisors</p>
+//             </div>
+          
+//           </div>
+//         </div>
+
+//         {/* Center Nav (Desktop) */}
+//         <nav
+//           className="desktop-nav"
+//           style={{ display: "none", gap: 28, alignItems: "center" }}
+//         >
+//           {navItem("/", "Home")}
+//           {navItem("/about", "About")}
+//           {navItem("/services", "Services")}
+//           {navItem("/toolkit", "Toolkit")}
+//         </nav>
+
+//         {/* Right CTA */}
+//         <div className="desktop-nav" style={{ display: "none" }}>
+//           <button
+//             className="btn-primary"
+//             style={{ padding: "12px 22px", borderRadius: 999 }}
+//           >
+//             Contact Us
+//           </button>
+//         </div>
+//       </div>
+//     </header>
+//   );
+// }
+
+// import { useState, useEffect } from "react";
+// import { Link, useLocation } from "react-router-dom";
+
+// export default function Header() {
+// const [scrolled, setScrolled] = useState(false);
+// const location = useLocation();
+
+// useEffect(() => {
+// const onScroll = () => setScrolled(window.scrollY > 10);
+
+
+// window.addEventListener("scroll", onScroll);
+
+// return () => window.removeEventListener("scroll", onScroll);
+
+
+// }, []);
+
+// const navItem = (to, label) => (
+// <Link
+// to={to}
+// style={{
+// position: "relative",
+// padding: "6px 2px",
+// textDecoration: "none",
+// color:
+// location.pathname === to
+// ? "var(--accent)"
+// : "inherit",
+// fontWeight: 500,
+// transition: "0.2s ease",
+// }}
+// >
+// {label}
+
+
+//   {location.pathname === to && (
+//     <span
+//       style={{
+//         position: "absolute",
+//         left: 0,
+//         bottom: -6,
+//         width: "100%",
+//         height: 2,
+//         background: "var(--accent)",
+//         borderRadius: 2,
+//       }}
+//     />
+//   )}
+// </Link>
+
+// );
+
+// return (
+// <header
+// style={{
+// position: "fixed",
+// top: 0,
+// width: "100%",
+// zIndex: 50,
+// background: scrolled
+// ? "rgba(255,250,243,0.92)"
+// : "transparent",
+// backdropFilter: scrolled
+// ? "blur(12px)"
+// : "none",
+// borderBottom: scrolled
+// ? "1px solid rgba(0,0,0,0.06)"
+// : "none",
+// transition: "all 0.3s ease",
+// }}
+// >
+// <div
+// className="container"
+// style={{
+// height: 80,
+// display: "flex",
+// alignItems: "center",
+// justifyContent: "space-between",
+// }}
+// >
+// {/* LOGO + BRAND */}
+// <Link
+// to="/"
+// style={{
+// display: "flex",
+// alignItems: "center",
+// gap: 14,
+// textDecoration: "none",
+// color: "inherit",
+// }}
+// >
+// <div
+// style={{
+// width: 44,
+// height: 44,
+// borderRadius: "50%",
+// overflow: "hidden",
+// background: "#FFFFFF",
+// display: "flex",
+// alignItems: "center",
+// justifyContent: "center",
+// boxShadow:
+// "0 4px 12px rgba(0,0,0,0.08)",
+// }}
+// >
+// <img
+// src="/logo.jpeg"
+// alt="TrustLeaf Advisors"
+// style={{
+// width: "90%",
+// height: "90%",
+// objectFit: "cover",
+// }}
+// /> </div>
+
+
+//       <div style={{ lineHeight: 1.2 }}>
+//         <div
+//           style={{
+//             fontWeight: 800,
+//             fontSize: 22,
+//           }}
+//         >
+//           TrustLeaf Advisors
+//         </div>
+//       </div>
+//     </Link>
+
+//     {/* NAVIGATION */}
+//     <nav
+//       className="desktop-nav"
+//       style={{
+//         display: "flex",
+//         gap: 32,
+//         alignItems: "center",
+//       }}
+//     >
+//       {navItem("/", "Home")}
+//       {navItem("/about", "About")}
+//       {navItem("/services", "Services")}
+//       {navItem("/team", "Our Team")}
+//       {navItem("/toolkit", "Toolkit")}
+
+//     </nav>
+
+//     {/* CTA */}
+//     <div
+//       className="desktop-nav"
+//       style={{
+//         display: "flex",
+//         alignItems: "center",
+//       }}
+//     >
+//       <Link
+//         to="/contact"
+//         style={{
+//           textDecoration: "none",
+//         }}
+//       >
+//         <button
+//           className="btn-primary"
+//           style={{
+//             padding: "12px 22px",
+//             borderRadius: 999,
+//             cursor: "pointer",
+//           }}
+//         >
+//           Contact Us
+//         </button>
+//       </Link>
+//     </div>
+//   </div>
+// </header>
+
+
+// );
+// }
+
+
+
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -71,8 +367,10 @@ export default function Header() {
       style={{
         position: "relative",
         padding: "6px 2px",
+        textDecoration: "none",
         color: location.pathname === to ? "var(--accent)" : "inherit",
         fontWeight: 500,
+        transition: "0.2s ease",
       }}
     >
       {label}
@@ -99,9 +397,10 @@ export default function Header() {
         top: 0,
         width: "100%",
         zIndex: 50,
-        background: scrolled ? "rgba(255,250,243,0.9)" : "transparent",
+        background: scrolled ? "rgba(255,250,243,0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
         borderBottom: scrolled ? "1px solid rgba(0,0,0,0.06)" : "none",
+        transition: "all 0.3s ease",
       }}
     >
       <div
@@ -113,8 +412,17 @@ export default function Header() {
           justifyContent: "space-between",
         }}
       >
-        {/* Left: Logo + Brand */}
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+        {/* LOGO + BRAND */}
+        <Link
+          to="/"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 14,
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
           <div
             style={{
               width: 44,
@@ -125,42 +433,47 @@ export default function Header() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
             }}
           >
-                       <img
+            <img
               src="/logo.jpeg"
-              alt="CA Logo"
+              alt="TrustLeaf Advisors"
               style={{ width: "90%", height: "90%", objectFit: "cover" }}
             />
           </div>
-
           <div style={{ lineHeight: 1.2 }}>
             <div style={{ fontWeight: 800, fontSize: 22 }}>
-              <p>TrustLeaf Advisors</p>
+              TrustLeaf Advisors
             </div>
-          
           </div>
-        </div>
+        </Link>
 
-        {/* Center Nav (Desktop) */}
+        {/* NAVIGATION */}
         <nav
           className="desktop-nav"
-          style={{ display: "none", gap: 28, alignItems: "center" }}
+          style={{ display: "flex", gap: 32, alignItems: "center" }}
         >
           {navItem("/", "Home")}
           {navItem("/about", "About")}
           {navItem("/services", "Services")}
+          {navItem("/team", "Our Team")}
           {navItem("/toolkit", "Toolkit")}
         </nav>
 
-        {/* Right CTA */}
-        <div className="desktop-nav" style={{ display: "none" }}>
-          <button
-            className="btn-primary"
-            style={{ padding: "12px 22px", borderRadius: 999 }}
+        {/* CTA — opens user's default mail client with To pre-filled */}
+        <div className="desktop-nav" style={{ display: "flex", alignItems: "center" }}>
+          <a
+            href="mailto:contact@trustleafadvisors.in"
+            style={{ textDecoration: "none" }}
           >
-            Contact Us
-          </button>
+            <button
+              className="btn-primary"
+              style={{ padding: "12px 22px", borderRadius: 999, cursor: "pointer" }}
+            >
+              Contact Us
+            </button>
+          </a>
         </div>
       </div>
     </header>

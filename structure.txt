@@ -1,0 +1,69 @@
+.
+├── README.md
+├── dist
+│   ├── assets
+│   │   ├── index-BmMV3kh_.js
+│   │   └── index-D-4UulYC.css
+│   ├── index.html
+│   ├── logo.jpeg
+│   ├── services
+│   │   ├── logo.jpeg
+│   │   ├── slide1.png
+│   │   ├── slide2.png
+│   │   ├── slide3.png
+│   │   ├── ss1.jpg
+│   │   ├── ss2.jpg
+│   │   ├── ss3.jpg
+│   │   ├── ss4.jpg
+│   │   ├── ss5.jpg
+│   │   └── sss5.jpg
+│   ├── tla1.jpeg
+│   ├── tlalogo.jpeg
+│   └── vite.svg
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── logo.jpeg
+│   ├── services
+│   │   ├── logo.jpeg
+│   │   ├── slide1.png
+│   │   ├── slide2.png
+│   │   ├── slide3.png
+│   │   ├── ss1.jpg
+│   │   ├── ss2.jpg
+│   │   ├── ss3.jpg
+│   │   ├── ss4.jpg
+│   │   ├── ss5.jpg
+│   │   └── sss5.jpg
+│   ├── tla1.jpeg
+│   ├── tlalogo.jpeg
+│   └── vite.svg
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   └── react.svg
+│   ├── components
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── ServicesGrid.jsx
+│   │   ├── ServicesPreview.jsx
+│   │   └── Values.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   ├── pages
+│   │   ├── About.jsx
+│   │   ├── Home.jsx
+│   │   ├── Services.jsx
+│   │   └── Toolkit.jsx
+│   └── styles
+│       └── theme.css
+├── structure.txt
+├── tailwind.config.js
+└── vite.config.js
+
+11 directories, 56 files

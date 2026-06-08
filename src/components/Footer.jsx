@@ -40,24 +40,25 @@ export default function Footer() {
             <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
               <MapPin size={18} color="#d69a2d" />
               <span style={{ color: "#cfc9be" }}>
-                1/5871 ( old Number 1/630) Kabool Nagar Tikona Park , Shahdara Delhi-110032 , India
+                1/5871 (old Number 1/630) Kabool Nagar Tikona Park, Shahdara,
+                Delhi – 110032, India
               </span>
             </div>
 
             <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
               <Phone size={18} color="#d69a2d" />
               <a
-                href="tel:+919876543210"
+                href="tel:+917830667096"
                 style={{ color: "#cfc9be", textDecoration: "none" }}
               >
-                78306 67096 
+                78306 67096
               </a>
             </div>
 
             <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
               <Phone size={18} color="#d69a2d" />
               <a
-                href="tel:+919876543210"
+                href="tel:+919990320685"
                 style={{ color: "#cfc9be", textDecoration: "none" }}
               >
                 99903 20685
@@ -67,7 +68,7 @@ export default function Footer() {
             <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
               <Mail size={18} color="#d69a2d" />
               <a
-                href="mailto:info@trustleapadvisors.com"
+                href="mailto:contact@trustleafadvisors.in"
                 style={{ color: "#cfc9be", textDecoration: "none" }}
               >
                 contact@trustleafadvisors.in
@@ -92,6 +93,14 @@ export default function Footer() {
             >
               Services
             </a>
+            <a
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#d6d1c7", textDecoration: "none" }}
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>
@@ -113,7 +122,15 @@ export default function Footer() {
             fontSize: 14,
           }}
         >
-          <span>© 2025 TrustLeap Advisors. All rights reserved.</span>
+          <span>© 2025 TrustLeaf Advisors. All rights reserved.</span>
+          <a
+            href="/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#a9a39a", textDecoration: "none" }}
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>
